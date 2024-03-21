@@ -43,7 +43,6 @@ export default {
         url: 'https://www.linkedin.com/school/university-of-kwazulu-natal/'
       }
     ]
-
     this.education = [
       {
         course: 'BSc (Eng) Electronic Engineering',
@@ -125,7 +124,10 @@ export default {
       <h2>Experience</h2>
     </div>
     <div class="content">
-      <p>I've been working for 2+ years in the software development industry.</p>
+      <p>
+        I've been working for {{ Number(new Date().getFullYear()) - 2022 }}+ years in the software
+        development industry.
+      </p>
       <br />
       <v-list lines="one">
         <v-list-item
