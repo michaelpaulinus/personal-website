@@ -4,6 +4,7 @@ import synthesisLogo from '@/assets/images/synthesis_software_technologies_pty_l
 import optinumLogo from '@/assets/images/opti_num_solutions_logo.jpeg'
 import ukznLogo from '@/assets/images/ukzn_logo.jpeg'
 import type ExperienceItem from 'src/interfaces/ExperienceItem'
+import type EducationItem from 'src/interfaces/EducationItem'
 
 document.title = 'About | Michael Paulinus'
 export default {
@@ -13,7 +14,8 @@ export default {
 
   data() {
     return {
-      experience: [] as ExperienceItem[]
+      experience: [] as ExperienceItem[],
+      education: [] as EducationItem[]
     }
   },
 
@@ -39,6 +41,16 @@ export default {
         time: 'Oct 2021 - Dec 2021',
         imageSrc: ukznLogo,
         url: 'https://www.linkedin.com/school/university-of-kwazulu-natal/'
+      }
+    ]
+
+    this.education = [
+      {
+        course: 'BSc (Eng) Electronic Engineering',
+        university: 'University of KwaZulu-Natal',
+        imageSrc: ukznLogo,
+        time: 'Feb 2018 - Dec 2021',
+        url: 'https://ww2.ukzn.ac.za/'
       }
     ]
   }
@@ -130,9 +142,39 @@ export default {
       </v-list>
     </div>
   </div>
+
+  <br />
+
+  <div class="container">
+    <div class="header">
+      <h2>Education</h2>
+    </div>
+    <div class="content">
+      <v-list lines="one">
+        <v-list-item
+          v-for="(item, index) in education"
+          :key="index"
+          :href="item.url"
+          :prepend-avatar="item.imageSrc"
+          target="_blank"
+        >
+          <v-list-item-title>{{ item.course }}</v-list-item-title>
+          <v-list-item-subtitle>{{ item.university }}</v-list-item-subtitle>
+          <template v-slot:append> {{ item.time }}</template>
+        </v-list-item>
+      </v-list>
+    </div>
+  </div>
 </template>
 
 <style>
+h2 {
+  color: grey;
+}
+
+p {
+  color: black;
+}
 .container {
   display: flex;
   justify-content: space-between;
