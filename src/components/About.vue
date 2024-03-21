@@ -87,6 +87,7 @@ export default {
           prepend-icon="mdi-gmail"
           append-icon="mdi-arrow-top-right"
           style="grid-row: 1; grid-column: 1"
+          size="large"
           >Email</v-btn
         >
         <v-btn
@@ -95,6 +96,7 @@ export default {
           prepend-icon="mdi-github"
           append-icon="mdi-arrow-top-right"
           style="grid-row: 1; grid-column: 2"
+          size="large"
           >GitHub</v-btn
         >
         <v-btn
@@ -103,6 +105,7 @@ export default {
           prepend-icon="mdi-instagram"
           append-icon="mdi-arrow-top-right"
           style="grid-row: 2; grid-column: 1"
+          size="large"
           >Instagram</v-btn
         >
         <v-btn
@@ -111,6 +114,7 @@ export default {
           prepend-icon="mdi-linkedin"
           append-icon="mdi-arrow-top-right"
           style="grid-row: 2; grid-column: 2"
+          size="large"
           >LinkedIn</v-btn
         >
       </section>
@@ -177,6 +181,7 @@ h2 {
 p {
   color: black;
 }
+
 .container {
   display: flex;
   justify-content: space-between;
