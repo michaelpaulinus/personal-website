@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script lang="ts">
 import synthesisLogo from '@/assets/images/synthesis_software_technologies_pty_ltd_logo.jpeg'
 import optinumLogo from '@/assets/images/opti_num_solutions_logo.jpeg'
@@ -8,33 +9,7 @@ document.title = 'About | Michael Paulinus'
 export default {
   setup() {},
 
-  methods: {
-    setupExperience() {
-      this.experience = [
-        {
-          title: 'Software Engineer',
-          company: 'Synthesis Software Technologies',
-          time: 'Feb 2024 -',
-          imageSrc: synthesisLogo,
-          url: 'https://www.linkedin.com/company/synthesis-software-technologies-pty-ltd/'
-        },
-        {
-          title: 'Consultant',
-          company: 'Opti-Num Solutions',
-          time: 'Jan 2022 - Jan 2024',
-          imageSrc: optinumLogo,
-          url: 'https://www.linkedin.com/company/opti-num-solutions/'
-        },
-        {
-          title: 'Student Tutor',
-          company: 'University of KwaZulu-Natal',
-          time: 'Oct 2021 - Dec 2021',
-          imageSrc: ukznLogo,
-          url: 'https://www.linkedin.com/school/university-of-kwazulu-natal/'
-        }
-      ]
-    }
-  },
+  methods: {},
 
   data() {
     return {
@@ -43,7 +18,29 @@ export default {
   },
 
   created() {
-    this.setupExperience()
+    this.experience = [
+      {
+        title: 'Software Engineer',
+        company: 'Synthesis Software Technologies',
+        time: 'Feb 2024 -',
+        imageSrc: synthesisLogo,
+        url: 'https://www.linkedin.com/company/synthesis-software-technologies-pty-ltd/'
+      },
+      {
+        title: 'Consultant',
+        company: 'Opti-Num Solutions',
+        time: 'Jan 2022 - Jan 2024',
+        imageSrc: optinumLogo,
+        url: 'https://www.linkedin.com/company/opti-num-solutions/'
+      },
+      {
+        title: 'Student Tutor',
+        company: 'University of KwaZulu-Natal',
+        time: 'Oct 2021 - Dec 2021',
+        imageSrc: ukznLogo,
+        url: 'https://www.linkedin.com/school/university-of-kwazulu-natal/'
+      }
+    ]
   }
 }
 </script>
