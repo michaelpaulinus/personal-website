@@ -3,8 +3,11 @@
 import synthesisLogo from '@/assets/images/synthesis_software_technologies_pty_ltd_logo.jpeg'
 import optinumLogo from '@/assets/images/opti_num_solutions_logo.jpeg'
 import ukznLogo from '@/assets/images/ukzn_logo.jpeg'
-import type ExperienceItem from 'src/interfaces/ExperienceItem'
-import type EducationItem from 'src/interfaces/EducationItem'
+import cradleMoonImg from '@/assets/images/cradle-moon.jpeg'
+import goldReefImg from '@/assets/images/gold-reef-city.jpeg'
+import graduationImg from '@/assets/images/graduation.jpg'
+import type ExperienceItem from '@/interfaces/ExperienceItem'
+import type EducationItem from '@/interfaces/EducationItem'
 
 document.title = 'About | Michael Paulinus'
 export default {
@@ -15,7 +18,10 @@ export default {
   data() {
     return {
       experience: [] as ExperienceItem[],
-      education: [] as EducationItem[]
+      education: [] as EducationItem[],
+      cradleMoonImg: cradleMoonImg,
+      goldReefImg: goldReefImg,
+      graduationImg: graduationImg
     }
   },
 
@@ -57,6 +63,22 @@ export default {
 </script>
 
 <template>
+  <div class="container">
+    <h1 style="margin: 0 auto; font-weight: 700; font-size: 3em">About/Michael</h1>
+  </div>
+
+  <br />
+
+  <div class="carousel-container">
+    <v-carousel :cycle="true" :hide-delimiters="true" :show-arrows="false">
+      <v-carousel-item :src="graduationImg"></v-carousel-item>
+      <v-carousel-item :src="cradleMoonImg"></v-carousel-item>
+      <v-carousel-item :src="goldReefImg"></v-carousel-item>
+    </v-carousel>
+  </div>
+
+  <br />
+
   <div class="container">
     <div class="header">
       <h2>About</h2>
@@ -189,6 +211,12 @@ p {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.carousel-container {
+  max-height: 300px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .button-container {

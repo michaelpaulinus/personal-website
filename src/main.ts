@@ -12,6 +12,14 @@ const vuetify = createVuetify({
   defaults: {
     VBtn: {
       variant: 'outlined'
+    },
+    VCarousel: {
+      maxWidth: 300,
+      maxHeight: 300
+    },
+    VCarouselItem: {
+      maxWidth: 300,
+      maxHeight: 300
     }
   },
   components,
