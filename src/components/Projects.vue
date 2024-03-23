@@ -24,14 +24,14 @@ export default {
       {
         title: 'Circuit Generator',
         description:
-          'The Circuit Generator project was a program designed to generate random electrical circuits using Python.',
+          'The Circuit Generator project was a program designed to generate random electrical circuits using Python. The objective was to create a tool that could generate circuits of different complexities, which could be used to train a machine learning model. To achieve this, I used the schemdraw library from Python to design and build the program. The program was able to generate circuits with varying levels of complexity, which included different components such as resistors, capacitors, inductors, and transistors. This project was an exciting opportunity to explore the intersection of machine learning and electrical engineering, and I am proud of the results achieved.',
         imageSrc: circuitGenImg,
         url: 'https://github.com/michaelpaulinus/Circuit-Generator'
       },
       {
         title: 'Circuit Component Detector',
         description:
-          'The Circuit Component Detector project was an exciting exploration into using machine learning to identify circuit components from digital circuits.',
+          'The Circuit Component Detector project was an exciting exploration into using machine learning to identify circuit components from digital circuits. The objective was to train a machine learning model to accurately recognize different circuit components, including resistors, capacitors, inductors, and transistors. To achieve this, I used the Objection Detection API in TensorFlow with the "SSD with Mobilenet" model. Over 200 images of different circuits were used in training the model to ensure high accuracy from the component detection. Using the trained model, the program was able to successfully identify and detect various circuit components with a high degree of accuracy. This project provided an excellent opportunity to explore the intersection of machine learning and electrical engineering and to see the practical applications of these technologies.',
         imageSrc: circuitDetImg,
         url: 'https://github.com/michaelpaulinus/Circuit-Components-Detector'
       },
