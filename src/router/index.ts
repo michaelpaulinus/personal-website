@@ -19,7 +19,8 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = to.name + ' | Michael Paulinus'
+  // document.title = to.name + ' | Michael Paulinus'
+  document.title = 'Michael Paulinus'
   next()
 })
 
