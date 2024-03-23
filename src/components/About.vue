@@ -9,7 +9,6 @@ import graduationImg from '@/assets/images/graduation.jpg'
 import type ExperienceItem from '@/interfaces/ExperienceItem'
 import type EducationItem from '@/interfaces/EducationItem'
 
-document.title = 'About | Michael Paulinus'
 export default {
   setup() {},
 

@@ -18,4 +18,9 @@ const router = createRouter({
   ]
 })
 
+router.beforeEach((to, from, next) => {
+  document.title = to.name + ' | Michael Paulinus'
+  next()
+})
+
 export default router

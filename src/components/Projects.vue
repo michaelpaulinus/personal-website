@@ -1,6 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script lang="ts">
-document.title = 'Projects | Michael Paulinus'
 import circuitDetImg from '@/assets/images/circuit-detector.jpg'
 import circuitGenImg from '@/assets/images/circuit-generator.jpg'
 import projectImg from '@/assets/images/project.jpg'
