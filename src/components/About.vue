@@ -198,10 +198,6 @@ h2 {
   color: grey;
 }
 
-p {
-  color: black;
-}
-
 .container {
   display: flex;
   justify-content: space-between;
