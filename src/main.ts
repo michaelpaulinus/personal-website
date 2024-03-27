@@ -10,6 +10,9 @@ import * as directives from 'vuetify/directives'
 const app = createApp(App)
 
 const vuetify = createVuetify({
+  theme: {
+    defaultTheme: 'light'
+  },
   defaults: {
     VBtn: {
       variant: 'outlined'
