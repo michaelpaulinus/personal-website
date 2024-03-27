@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script lang="ts">
 import synthesisLogo from '/images/synthesis_software_technologies_pty_ltd_logo.jpeg'
 import optinumLogo from '/images/opti_num_solutions_logo.jpeg'

@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script lang="ts">
 import circuitDetImg from '/images/circuit-detector.jpg'
 import circuitGenImg from '/images/circuit-generator.jpg'
