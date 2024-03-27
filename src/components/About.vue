@@ -1,11 +1,11 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script lang="ts">
-import synthesisLogo from '/public/images/synthesis_software_technologies_pty_ltd_logo.jpeg'
-import optinumLogo from '/public/images/opti_num_solutions_logo.jpeg'
-import ukznLogo from '/public/images/ukzn_logo.jpeg'
-import cradleMoonImg from '/public/images/cradle-moon.jpeg'
-import goldReefImg from '/public/images/gold-reef-city.jpeg'
-import graduationImg from '/public/images/graduation.jpg'
+import synthesisLogo from '/images/synthesis_software_technologies_pty_ltd_logo.jpeg'
+import optinumLogo from '/images/opti_num_solutions_logo.jpeg'
+import ukznLogo from '/images/ukzn_logo.jpeg'
+import cradleMoonImg from '/images/cradle-moon.jpeg'
+import goldReefImg from '/images/gold-reef-city.jpeg'
+import graduationImg from '/images/graduation.jpg'
 import type ExperienceItem from '@/interfaces/ExperienceItem'
 import type EducationItem from '@/interfaces/EducationItem'
 

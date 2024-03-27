@@ -1,10 +1,10 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script lang="ts">
-import circuitDetImg from '/public/images/circuit-detector.jpg'
-import circuitGenImg from '/public/images/circuit-generator.jpg'
-import projectImg from '/public/images/project.jpg'
-import votecoinImg from '/public/images/votecoin.png'
-import androidImg from '/public/images/android-app.png'
+import circuitDetImg from '/images/circuit-detector.jpg'
+import circuitGenImg from '/images/circuit-generator.jpg'
+import projectImg from '/images/project.jpg'
+import votecoinImg from '/images/votecoin.png'
+import androidImg from '/images/android-app.png'
 import type ProjectItem from '@/interfaces/ProjectItem'
 
 export default {
