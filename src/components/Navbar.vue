@@ -6,6 +6,10 @@ import { useTheme } from 'vuetify'
 export default {
   components: { About, Projects },
 
+  mounted() {
+    this.getPreferredColorScheme()
+  },
+
   data() {
     return {
       tab: 'one'
@@ -15,11 +19,19 @@ export default {
   setup() {
     const theme = useTheme()
 
+    function getPreferredColorScheme() {
+      theme.global.name.value =
+        window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light'
+    }
+
     function toggleTheme() {
       theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
     }
 
     return {
+      getPreferredColorScheme,
       toggleTheme
     }
   }
