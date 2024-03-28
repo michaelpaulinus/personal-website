@@ -1,12 +1,26 @@
 <script lang="ts">
 import About from './About.vue'
 import Projects from './Projects.vue'
+import { useTheme } from 'vuetify'
 
 export default {
   components: { About, Projects },
+
   data() {
     return {
       tab: 'one'
+    }
+  },
+
+  setup() {
+    const theme = useTheme()
+
+    function toggleTheme() {
+      theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+    }
+
+    return {
+      toggleTheme
     }
   }
 }
@@ -18,6 +32,7 @@ export default {
       <v-tab value="one">About</v-tab>
       <v-tab value="two">Projects</v-tab>
     </v-tabs>
+    <v-btn icon="mdi-theme-light-dark" @click="toggleTheme"></v-btn>
   </v-app-bar>
 
   <div class="page-content" style="padding-top: 10%">
