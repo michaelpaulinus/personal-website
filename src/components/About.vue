@@ -106,7 +106,7 @@ export default {
           target="_blank"
           prepend-icon="mdi-gmail"
           append-icon="mdi-arrow-top-right"
-          style="grid-row: 1; grid-column: 1"
+          style="grid-row: 1; grid-column: 1; justify-content: space-between"
           size="large"
           >Email</v-btn
         >
@@ -115,7 +115,7 @@ export default {
           target="_blank"
           prepend-icon="mdi-github"
           append-icon="mdi-arrow-top-right"
-          style="grid-row: 1; grid-column: 2"
+          style="grid-row: 1; grid-column: 2; justify-content: space-between"
           size="large"
           >GitHub</v-btn
         >
@@ -124,7 +124,7 @@ export default {
           target="_blank"
           prepend-icon="mdi-instagram"
           append-icon="mdi-arrow-top-right"
-          style="grid-row: 2; grid-column: 1"
+          style="grid-row: 2; grid-column: 1; justify-content: space-between"
           size="large"
           >Instagram</v-btn
         >
@@ -133,7 +133,7 @@ export default {
           target="_blank"
           prepend-icon="mdi-linkedin"
           append-icon="mdi-arrow-top-right"
-          style="grid-row: 2; grid-column: 2"
+          style="grid-row: 2; grid-column: 2; justify-content: space-between"
           size="large"
           >LinkedIn</v-btn
         >
