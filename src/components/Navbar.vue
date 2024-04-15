@@ -47,7 +47,7 @@ export default {
     <v-btn icon="mdi-theme-light-dark" @click="toggleTheme"></v-btn>
   </v-app-bar>
 
-  <div class="page-content" style="padding-top: 10%">
+  <div class="page-content" style="padding-top: 5%">
     <v-window v-model="tab">
       <v-window-item class="tabs" value="one"><About></About></v-window-item>
       <v-window-item value="two"><Projects></Projects></v-window-item>
