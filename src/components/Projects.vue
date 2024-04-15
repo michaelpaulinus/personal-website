@@ -1,7 +1,10 @@
 <script lang="ts">
+import spotiTrackerImg from '/images/spoti_tracker.webp'
+import footyPotyImg from '/images/footy_poty.png'
 import circuitDetImg from '/images/circuit-detector.jpg'
 import circuitGenImg from '/images/circuit-generator.jpg'
 import projectImg from '/images/project.jpg'
+import imageClassificationImg from '/images/image_classification.jpg'
 import votecoinImg from '/images/votecoin.png'
 import androidImg from '/images/android-app.png'
 import type ProjectItem from '@/interfaces/ProjectItem'
@@ -9,17 +12,26 @@ import type ProjectItem from '@/interfaces/ProjectItem'
 export default {
   data() {
     return {
-      circuitDetImg: circuitDetImg,
-      circuitGenImg: circuitGenImg,
-      projectImg: projectImg,
-      votecoinImg: votecoinImg,
-      androidImg: androidImg,
       projects: [] as ProjectItem[]
     }
   },
 
   created() {
     this.projects = [
+      {
+        title: 'Spoti-Tracker',
+        description:
+          'This is a Spotify wrapped clone that shows users their top artists and tracks for the last 6 weeks, 6 months and 12 months.',
+        imageSrc: spotiTrackerImg,
+        url: 'https://github.com/michaelpaulinus/spoti-tracker'
+      },
+      {
+        title: 'Footy-POTY',
+        description:
+          'A web app that tracks the top goal scorers from the Top 5 European football leagues.',
+        imageSrc: footyPotyImg,
+        url: 'https://github.com/michaelpaulinus/footy-poty'
+      },
       {
         title: 'Circuit Generator',
         description:
@@ -45,7 +57,7 @@ export default {
         title: 'Image Classification Using GLCM',
         description:
           'This project uses Haralick features from a Gray Level Co-occurrence Matrix (GLCM) to classify X-ray scans of a chest as that of a chest that is normal or having pneumonia.',
-        imageSrc: projectImg,
+        imageSrc: imageClassificationImg,
         url: 'https://github.com/michaelpaulinus/Image-Classification-GLCM'
       },
       {
