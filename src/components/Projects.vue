@@ -1,9 +1,9 @@
 <script lang="ts">
+import randRatesImg from '/images/rand_rates.jpg'
 import spotiTrackerImg from '/images/spoti_tracker.webp'
 import footyPotyImg from '/images/footy_poty.png'
 import circuitDetImg from '/images/circuit-detector.jpg'
 import circuitGenImg from '/images/circuit-generator.jpg'
-import projectImg from '/images/project.jpg'
 import imageClassificationImg from '/images/image_classification.jpg'
 import votecoinImg from '/images/votecoin.png'
 import androidImg from '/images/android-app.png'
@@ -18,6 +18,13 @@ export default {
 
   created() {
     this.projects = [
+      {
+        title: 'Rand Rates',
+        description:
+          'This is a twitter bot that tweets the daily Rand value against USD, EUR and GBP at 12pm.',
+        imageSrc: randRatesImg,
+        url: 'https://github.com/michaelpaulinus/rand-rates'
+      },
       {
         title: 'Spoti-Tracker',
         description:
