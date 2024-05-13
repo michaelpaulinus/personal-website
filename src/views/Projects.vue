@@ -7,7 +7,7 @@ import circuitGenImg from '/images/circuit-generator.jpg'
 import imageClassificationImg from '/images/image_classification.jpg'
 import votecoinImg from '/images/votecoin.png'
 import androidImg from '/images/android-app.png'
-import type ProjectItem from '@/interfaces/ProjectItem'
+import type ProjectItem from '@/models/ProjectItem'
 
 export default {
   data() {

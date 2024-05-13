@@ -5,8 +5,8 @@ import ukznLogo from '/images/ukzn_logo.jpeg'
 import cradleMoonImg from '/images/cradle-moon.jpeg'
 import goldReefImg from '/images/gold-reef-city.jpeg'
 import graduationImg from '/images/graduation.jpg'
-import type ExperienceItem from '@/interfaces/ExperienceItem'
-import type EducationItem from '@/interfaces/EducationItem'
+import type ExperienceItem from '@/models/ExperienceItem'
+import type EducationItem from '@/models/EducationItem'
 
 export default {
   setup() {},
